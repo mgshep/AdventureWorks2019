@@ -1,0 +1,406 @@
+databaseType = "SqlServer"
+id = "d4f08838-3be5-443f-b61f-ab9f0f686eab"
+name = "AdventureWorks2019"
+
+[flyway]
+defaultSchema = "dbo"
+locations = [ "filesystem:migrations" ]
+mixed = true
+outOfOrder = true
+schemaModelLocation = "schema-model"
+validateMigrationNaming = true
+
+  [flyway.check]
+  majorTolerance = 0
+
+[flyway.plugins.clean]
+mode = "all"
+
+[flywayDesktop]
+developmentEnvironment = "development"
+schemaModel = "schema-model"
+shadowEnvironment = "shadow"
+
+[redgateCompare]
+filterFile = "filter.rgf"
+
+  [redgateCompare.sqlserver]
+  filterFile = "Filter.scpf"
+
+[redgateCompare.sqlserver.options.behavior]
+addCreateOrAlterForRerunnableScripts = false
+addDropAndCreateForRerunnableScripts = false
+addNoPopulationToFulltextIndexes = false
+addObjectExistenceChecks = false
+addOnlineOnWhenCreatingIndexesOrAlteringColumns = false
+addWithEncryption = false
+considerNextFilegroupInPartitionSchemes = true
+decryptEncryptedObjects = true
+disableAutoColumnMapping = false
+dontUseAlterAssemblyToChangeClrObjects = false
+forbidDuplicateTableStorageSettings = false
+forceColumnOrder = false
+ignoreMigrationScripts = false
+includeDependencies = true
+includeRoleExistenceChecks = true
+includeSchemaExistenceChecks = true
+inlineFulltextFields = false
+inlineTableObjects = false
+useCaseSensitiveObjectDefinition = false
+useDatabaseCompatibilityLevel = false
+useSetStatementsInScriptDatabaseInfo = false
+writeAssembliesAsDlls = false
+
+[redgateCompare.sqlserver.options.ignores]
+ignoreAuthorizationOnSchemaObjects = false
+ignoreBindings = false
+ignoreChangeTracking = false
+ignoreCollations = true
+ignoreComments = false
+ignoreDataCompression = true
+ignoreDataSyncSchema = false
+ignoreDatabaseAndServerNameInSynonyms = true
+ignoreDmlTriggers = false
+ignoreDynamicDataMasking = false
+ignoreEventNotificationsOnQueues = false
+ignoreExtendedProperties = false
+ignoreFileGroupsPartitionSchemesAndPartitionFunctions = true
+ignoreFillFactorAndIndexPadding = true
+ignoreFullTextIndexing = false
+ignoreIdentitySeedAndIncrementValues = false
+ignoreIndexes = false
+ignoreInsteadOfTriggers = false
+ignoreInternallyUsedMicrosoftExtendedProperties = false
+ignoreLockPropertiesOfIndexes = false
+ignoreNocheckAndWithNocheck = false
+ignoreNotForReplication = true
+ignoreNullabilityOfColumns = false
+ignorePerformanceIndexes = false
+ignorePermissions = false
+ignoreReplicationTriggers = true
+ignoreSchemas = false
+ignoreSensitivityClassifications = false
+ignoreSetQuotedIdentifierAndSetAnsiNullsStatements = false
+ignoreSquareBracketsInObjectNames = false
+ignoreStatistics = true
+ignoreStatisticsIncremental = false
+ignoreStatisticsNoRecomputePropertyOnIndexes = false
+ignoreSynonymDependencies = false
+ignoreSystemNamedConstraintAndIndexNames = false
+ignoreTsqltFrameworkAndTests = true
+ignoreUserProperties = true
+ignoreUsersPermissionsAndRoleMemberships = true
+ignoreWhiteSpace = true
+ignoreWithElementOrder = true
+ignoreWithEncryption = false
+ignoreWithNoCheck = true
+
+[redgateCompare.sqlserver.data.options.mapping]
+includeTimestampColumns = false
+useCaseSensitiveObjectDefinition = true
+
+[redgateCompare.sqlserver.data.options.comparison]
+compressTemporaryFiles = false
+forceBinaryCollation = false
+treatEmptyStringAsNull = false
+trimTrailingWhiteSpace = false
+useChecksumComparison = false
+useMaxPrecisionForFloatComparison = false
+
+[redgateCompare.sqlserver.data.options.deployment]
+disableDdlTriggers = true
+disableDmlTriggers = false
+disableForeignKeys = false
+dontIncludeCommentsInScript = false
+dropPrimaryKeysIndexesAndUniqueConstraints = false
+reseedIdentityColumns = false
+skipIntegrityChecksForForeignKeys = false
+transportClrDataTypesAsBinary = false
+
+  [[redgateCompare.staticDataTables]]
+  schema = "HumanResources"
+  table = "EmployeePayHistory"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Sales"
+  table = "SalesOrderHeaderSalesReason"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Sales"
+  table = "SalesPerson"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Production"
+  table = "Illustration"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "HumanResources"
+  table = "JobCandidate"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Production"
+  table = "Location"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Person"
+  table = "Password"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Sales"
+  table = "SalesPersonQuotaHistory"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Person"
+  table = "Person"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Sales"
+  table = "SalesReason"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Sales"
+  table = "SalesTaxRate"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Sales"
+  table = "PersonCreditCard"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Person"
+  table = "PersonPhone"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Sales"
+  table = "SalesTerritory"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Person"
+  table = "PhoneNumberType"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Production"
+  table = "Product"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Sales"
+  table = "SalesTerritoryHistory"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Production"
+  table = "ScrapReason"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "HumanResources"
+  table = "Shift"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Production"
+  table = "ProductCategory"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Purchasing"
+  table = "ShipMethod"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Production"
+  table = "ProductCostHistory"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Production"
+  table = "ProductDescription"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Sales"
+  table = "ShoppingCartItem"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Production"
+  table = "ProductDocument"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "dbo"
+  table = "DatabaseLog"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Production"
+  table = "ProductInventory"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Sales"
+  table = "SpecialOffer"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "dbo"
+  table = "ErrorLog"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Production"
+  table = "ProductListPriceHistory"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Person"
+  table = "Address"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Sales"
+  table = "SpecialOfferProduct"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Production"
+  table = "ProductModel"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Person"
+  table = "AddressType"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Person"
+  table = "StateProvince"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Production"
+  table = "ProductModelIllustration"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "dbo"
+  table = "AWBuildVersion"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Production"
+  table = "ProductModelProductDescriptionCulture"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Production"
+  table = "BillOfMaterials"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Sales"
+  table = "Store"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Production"
+  table = "ProductPhoto"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Production"
+  table = "ProductProductPhoto"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Production"
+  table = "TransactionHistory"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Production"
+  table = "ProductReview"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Person"
+  table = "BusinessEntity"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Production"
+  table = "TransactionHistoryArchive"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Production"
+  table = "ProductSubcategory"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Person"
+  table = "BusinessEntityAddress"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Purchasing"
+  table = "ProductVendor"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Person"
+  table = "BusinessEntityContact"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Production"
+  table = "UnitMeasure"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Purchasing"
+  table = "Vendor"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Person"
+  table = "ContactType"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Sales"
+  table = "CountryRegionCurrency"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Person"
+  table = "CountryRegion"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Production"
+  table = "WorkOrder"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Purchasing"
+  table = "PurchaseOrderDetail"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Sales"
+  table = "CreditCard"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Production"
+  table = "Culture"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Production"
+  table = "WorkOrderRouting"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Sales"
+  table = "Currency"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Purchasing"
+  table = "PurchaseOrderHeader"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Sales"
+  table = "CurrencyRate"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Sales"
+  table = "Customer"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "HumanResources"
+  table = "Department"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Production"
+  table = "Document"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Sales"
+  table = "SalesOrderDetail"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Person"
+  table = "EmailAddress"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "HumanResources"
+  table = "Employee"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "Sales"
+  table = "SalesOrderHeader"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "HumanResources"
+  table = "EmployeeDepartmentHistory"
+
+[environments.development]
+url = "jdbc:sqlserver://SQLLaptop1;instanceName=NI01;databaseName=AdventureWorks2019;encrypt=true;integratedSecurity=true;trustServerCertificate=true"
+displayName = "Development database"

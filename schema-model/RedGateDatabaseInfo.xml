@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DatabaseInformation Version="3">
+  <ScriptFileEncoding>UTF8</ScriptFileEncoding>
+  <DefaultCollation>Latin1_General_CI_AS</DefaultCollation>
+  <DefaultSchema>dbo</DefaultSchema>
+  <DefaultUser>dbo</DefaultUser>
+  <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  <DatabaseVersion>14</DatabaseVersion>
+  <ServerVersion>15.0</ServerVersion>
+  <CompatibilityLevel>140</CompatibilityLevel>
+  <EngineEdition>Enterprise</EngineEdition>
+  <IsAzure>False</IsAzure>
+  <ScriptFolderType>Default</ScriptFolderType>
+  <MaxDataFileSize>10485760</MaxDataFileSize>
+  <ProjectGuid>d4f08838-3be5-443f-b61f-ab9f0f686eab</ProjectGuid>
+  <WriteToFileOptions>
+    <Prefixes>
+      <None>
+      </None>
+      <Table>Tables</Table>
+      <StoredProcedure>Stored Procedures</StoredProcedure>
+      <View>Views</View>
+      <Default>Defaults</Default>
+      <FullTextCatalog>Storage\Full Text Catalogs</FullTextCatalog>
+      <Function>Functions</Function>
+      <Role>Security\Roles</Role>
+      <Rule>Rules</Rule>
+      <User>Security\Users</User>
+      <UserDefinedType>Types\User-defined Data Types</UserDefinedType>
+      <Trigger>
+      </Trigger>
+      <DdlTrigger>Database Triggers</DdlTrigger>
+      <Assembly>Assemblies</Assembly>
+      <Synonym>Synonyms</Synonym>
+      <XmlSchemaCollection>Types\XML Schema Collections</XmlSchemaCollection>
+      <MessageType>Service Broker\Message Types</MessageType>
+      <Contract>Service Broker\Contracts</Contract>
+      <Queue>Service Broker\Queues</Queue>
+      <Service>Service Broker\Services</Service>
+      <Route>Service Broker\Routes</Route>
+      <EventNotification>Service Broker\Event Notifications</EventNotification>
+      <PartitionScheme>Storage\Partition Schemes</PartitionScheme>
+      <PartitionFunction>Storage\Partition Functions</PartitionFunction>
+      <Field>
+      </Field>
+      <Index>
+      </Index>
+      <Schema>Security\Schemas</Schema>
+      <ServiceBinding>Service Broker\Remote Service Bindings</ServiceBinding>
+      <Certificate>Security\Certificates</Certificate>
+      <SymmetricKey>Security\Symmetric Keys</SymmetricKey>
+      <AsymmetricKey>Security\Asymmetric Keys</AsymmetricKey>
+      <CheckConstraint>
+      </CheckConstraint>
+      <FullTextStoplist>Storage\Full Text Stoplists</FullTextStoplist>
+      <ExtendedProperty>Extended Properties</ExtendedProperty>
+      <Data>Data</Data>
+      <Sequence>Sequences</Sequence>
+      <SearchPropertyList>Search Property Lists</SearchPropertyList>
+      <SecurityPolicy>Security Policies</SecurityPolicy>
+      <ExternalFileFormat>External Resources\External File Formats</ExternalFileFormat>
+      <ExternalDataSource>External Resources\External Data Sources</ExternalDataSource>
+      <ExternalTable>Tables\External Tables</ExternalTable>
+    </Prefixes>
+    <DataWriteAllFilesInOneDirectory>True</DataWriteAllFilesInOneDirectory>
+  </WriteToFileOptions>
+  <DataFileSet>
+    <Count>70</Count>
+    <DataFile>Sales.SalesOrderHeaderSalesReason_Data.sql</DataFile>
+    <DataFile>Sales.SalesOrderDetail_Data.sql</DataFile>
+    <DataFile>Sales.SalesOrderHeader_Data.sql</DataFile>
+    <DataFile>Sales.Customer_Data.sql</DataFile>
+    <DataFile>Production.WorkOrderRouting_Data.sql</DataFile>
+    <DataFile>Sales.Store_Data.sql</DataFile>
+    <DataFile>Sales.SalesTerritoryHistory_Data.sql</DataFile>
+    <DataFile>Sales.SalesPersonQuotaHistory_Data.sql</DataFile>
+    <DataFile>Purchasing.PurchaseOrderDetail_Data.sql</DataFile>
+    <DataFile>Production.WorkOrder_Data.sql</DataFile>
+    <DataFile>Production.ProductDocument_Data.sql</DataFile>
+    <DataFile>Person.BusinessEntityAddress_Data.sql</DataFile>
+    <DataFile>Sales.SpecialOfferProduct_Data.sql</DataFile>
+    <DataFile>Sales.ShoppingCartItem_Data.sql</DataFile>
+    <DataFile>Sales.SalesTaxRate_Data.sql</DataFile>
+    <DataFile>Sales.SalesPerson_Data.sql</DataFile>
+    <DataFile>Purchasing.PurchaseOrderHeader_Data.sql</DataFile>
+    <DataFile>Purchasing.ProductVendor_Data.sql</DataFile>
+    <DataFile>Production.TransactionHistory_Data.sql</DataFile>
+    <DataFile>Production.ProductReview_Data.sql</DataFile>
+    <DataFile>Production.ProductProductPhoto_Data.sql</DataFile>
+    <DataFile>Production.ProductListPriceHistory_Data.sql</DataFile>
+    <DataFile>Production.ProductInventory_Data.sql</DataFile>
+    <DataFile>Production.ProductCostHistory_Data.sql</DataFile>
+    <DataFile>Production.Document_Data.sql</DataFile>
+    <DataFile>Production.BillOfMaterials_Data.sql</DataFile>
+    <DataFile>Person.Address_Data.sql</DataFile>
+    <DataFile>HumanResources.JobCandidate_Data.sql</DataFile>
+    <DataFile>HumanResources.EmployeePayHistory_Data.sql</DataFile>
+    <DataFile>HumanResources.EmployeeDepartmentHistory_Data.sql</DataFile>
+    <DataFile>Sales.PersonCreditCard_Data.sql</DataFile>
+    <DataFile>Production.Product_Data.sql</DataFile>
+    <DataFile>Person.StateProvince_Data.sql</DataFile>
+    <DataFile>Person.PersonPhone_Data.sql</DataFile>
+    <DataFile>Person.Password_Data.sql</DataFile>
+    <DataFile>Person.EmailAddress_Data.sql</DataFile>
+    <DataFile>Person.BusinessEntityContact_Data.sql</DataFile>
+    <DataFile>HumanResources.Employee_Data.sql</DataFile>
+    <DataFile>Sales.SalesTerritory_Data.sql</DataFile>
+    <DataFile>Sales.CurrencyRate_Data.sql</DataFile>
+    <DataFile>Sales.CountryRegionCurrency_Data.sql</DataFile>
+    <DataFile>Purchasing.Vendor_Data.sql</DataFile>
+    <DataFile>Production.ProductSubcategory_Data.sql</DataFile>
+    <DataFile>Production.ProductModelProductDescriptionCulture_Data.sql</DataFile>
+    <DataFile>Production.ProductModelIllustration_Data.sql</DataFile>
+    <DataFile>Person.Person_Data.sql</DataFile>
+    <DataFile>Sales.SpecialOffer_Data.sql</DataFile>
+    <DataFile>Sales.SalesReason_Data.sql</DataFile>
+    <DataFile>Sales.Currency_Data.sql</DataFile>
+    <DataFile>Sales.CreditCard_Data.sql</DataFile>
+    <DataFile>Purchasing.ShipMethod_Data.sql</DataFile>
+    <DataFile>Production.UnitMeasure_Data.sql</DataFile>
+    <DataFile>Production.TransactionHistoryArchive_Data.sql</DataFile>
+    <DataFile>Production.ScrapReason_Data.sql</DataFile>
+    <DataFile>Production.ProductPhoto_Data.sql</DataFile>
+    <DataFile>Production.ProductModel_Data.sql</DataFile>
+    <DataFile>Production.ProductDescription_Data.sql</DataFile>
+    <DataFile>Production.ProductCategory_Data.sql</DataFile>
+    <DataFile>Production.Location_Data.sql</DataFile>
+    <DataFile>Production.Illustration_Data.sql</DataFile>
+    <DataFile>Production.Culture_Data.sql</DataFile>
+    <DataFile>Person.PhoneNumberType_Data.sql</DataFile>
+    <DataFile>Person.CountryRegion_Data.sql</DataFile>
+    <DataFile>Person.ContactType_Data.sql</DataFile>
+    <DataFile>Person.BusinessEntity_Data.sql</DataFile>
+    <DataFile>Person.AddressType_Data.sql</DataFile>
+    <DataFile>HumanResources.Shift_Data.sql</DataFile>
+    <DataFile>HumanResources.Department_Data.sql</DataFile>
+    <DataFile>dbo.DatabaseLog_Data.sql</DataFile>
+    <DataFile>dbo.AWBuildVersion_Data.sql</DataFile>
+  </DataFileSet>
+</DatabaseInformation>
