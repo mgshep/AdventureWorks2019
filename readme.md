@@ -6,5 +6,5 @@ Some Description
 
 Details about project
 
-Some more details ggg
+Some more details
 
